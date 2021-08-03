@@ -708,6 +708,88 @@ align-content: flex-start;
   padding: 5px;
 }
 
+.fase2 {
+
+  background-image: url(/assets/img/background.png);
+  height: 500px;
+}
+
+.fase2-first {
+
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+
+.exemplo-radio {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.fase2-first h3 {
+
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 22px;
+  margin-top: 10px;
+
+
+}
+
+.fase2-first p {
+
+  text-align: center;
+}
+
+.valor {
+
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.termos {
+
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.termos a {
+
+  width: 100%;
+  text-decoration: underline;
+
+
+}
+
+.termos a:hover {
+
+  color: rgb(218, 218, 218);
+}
+
+.termos input + label {
+
+  margin-top: 25px;
+  width: 100%;
+  color: white;
+}
+
+.termos2 {
+
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
 
 
 

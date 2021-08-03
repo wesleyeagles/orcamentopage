@@ -249,6 +249,8 @@
             </div>
           </div>
           </div>
+
+          
           
           <aside class="col-md-5"> 
             <!-- Paypal Submit URL : https://www.paypal.com/cgi-bin/webscr --> 
@@ -269,8 +271,61 @@
             </form>
           </aside>
 
+          
+
+          
+
 
             
+
+        </section>
+
+        <section class="fase2" id="fase2">
+
+          <div class="fase2-first">
+
+            <h3>FORMA DE PAGAMENTO</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint adipisci optio deleniti cupiditate iusto commodi laboriosam vel quasi! Ex rem maiores molestiae, obcaecati inventore saepe dolore voluptatum optio minus accusamus.</p>
+
+          
+            <div class="exemplo-radio">
+                  <input type="radio" value="0" name="campo-radio" id="campo-radio1" class="teste" /> 
+                 <label for="campo-radio1">A Vista (Desconto)</label>  
+                <input type="radio" value="0" name="campo-radio" id="campo-radio2" /> 
+                 <label for="campo-radio2">Entrada 30% + 2x Saldo Restante </label>
+            </div>
+
+            <div class="valor">
+              Valor à pagar
+               <span class="sc-cart-subtotal" id="sc-cart-subtotal">
+                 <input type="text" id="valor">
+               </span></div>
+
+              </div>
+
+              
+
+              <div class="termos">
+                <a href="#">Ler Termos de Uso</a>
+                <br>
+                </div>
+                <div class="termos2">
+                <input type="checkbox" value="0" name="campo-radio3" id="campo-radio3" class="teste" required /> 
+                   <label for="campo-radio3">Concordo com os Termos de Uso</label> 
+
+                <button class="button55" disabled id="envia">Continuar para Identificação</button>
+
+                
+              </div>
+
+            
+
+
+        
+
+        
+
 
         </section>
 
@@ -318,6 +373,21 @@ $(".button5").on('click',function(){
     $('#produto5').slideDown(1000); // aparece o div
 
 })
+
+var subtotal = document.getElementById("valor").innerHTML;
+
+$ (".teste").on('click',function(){
+    alert(subtotal * 20)
+})
+
+function HabiDsabi(){
+    if (document.getElementById('campo-radio3').checked == true){
+        document.getElementById('envia').disabled = ""
+    }
+	if (document.getElementById('campo-radio3').checked == false){
+        document.getElementById('envia').disabled = "disabled"
+    }
+}
 
 
 

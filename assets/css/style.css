@@ -4,8 +4,29 @@
   font-family: Gilroy;
 }
 @font-face {
-  font-family: 'Gilroy';
+  font-family: 'GilroyLight';
   src: url('/assets/fonts/Gilroy-Light.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyExtraBold';
+  src: url('/assets/fonts/Gilroy-ExtraBold.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyRegular';
+  src: url('/assets/fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyMedium';
+  src: url('/assets/fonts/Gilroy-Medium.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -13,9 +34,10 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0;
+
 }
 .header {
-  background-image: url(/assets/img//background.png);
+  background-image: url(../img/background.png);
   width: 100%;
   height: 350px;
 }
@@ -38,13 +60,17 @@ body {
   text-align: center;
   padding: 20px;
   color: white;
-  font-weight: bold;
+  font-family: GilroyExtraBold;
+  font-size: 60px;
+  line-height:   40px;
 }
 .header p {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   color: white;
-  font-weight: normal;
+  font-family: GilroyRegular;
+  text-align: center;
+  font-size: 20px;
 }
 .nav-menu {
   width: 70%;
@@ -52,12 +78,52 @@ body {
 }
 a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
   margin-right: 15px;
   font-weight: normal;
   float: right;
 }
+
+.caption h4 {
+
+  font-size: 25px;
+  color: white;
+  font-family: GilroyRegular;
+}
+
+.caption p {
+
+
+  font-size: 20px;
+  font-family: Gilroy;
+}
+
+.caption strong {
+
+  font-size: 20px;
+}
+
+.caption button {
+
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.caption input {
+
+  font-size: 15px;
+  margin-top: 5px;
+  width: 100px;
+}
+
+
+
+
+
+
+
+
 .container-lead {
   max-width: 800px;
   display: flex;
@@ -72,13 +138,16 @@ a {
 .container-lead2 h1 {
   text-align: center;
   width: 100%;
+  
   color: white;
   padding: 20px 0px;
-  font-weight: bold;
+  font-family: GilroyMedium;
+  line-height: 5px;
 }
 .container-lead2 p {
   text-align: center;
   width: 100%;
+  font-family: GilroyRegular;
   color: white;
   margin-bottom: 10px;
 }
@@ -103,7 +172,7 @@ a {
 }
 .section-container2 {
   background-image: url(/assets/img/background.png);
-  height: 150px;
+  height: 110px;
 }
 #msform input, #msform textarea {
   padding: 10px;
@@ -114,7 +183,7 @@ a {
   margin-left: 30px;
   box-sizing: border-box;
   font-family: Gilroy;
-  font-size: 13px;
+  font-size: 20px;
   margin-right: 30px;
 }
 input::placeholder {
@@ -184,6 +253,16 @@ input::placeholder {
 .selectBox select {
   width: 100%;
   font-weight: bold;
+}
+
+.section-container2 h1 {
+
+  font-size: 25px;
+}
+
+.section-container2 p {
+
+  font-size: 20px;
 }
 
 .overSelect {
@@ -551,7 +630,9 @@ align-content: flex-start;
 
 .col-md-5 {
 
-  margin-left:  150px;
+  margin-left:  180px;
+  font-size: 20px;
+  font-family: GilroyMedium;
 
 }
 .product1-total4 {
@@ -570,6 +651,9 @@ align-content: flex-start;
   border: solid gray;
   border-width: 1px;
   margin-top: 10px;
+  background-image: url(/assets/img/background.png);
+  border-radius: 10px;
+
 }
 
 .img-responsive {
@@ -581,11 +665,14 @@ align-content: flex-start;
 
   margin-top: 20px;
   margin-right: 40px;
-  border: solid gray;
+  border: solid white;
+  border-radius: 5px;
   border-width: 1px;
   margin-bottom: 10px;
   text-align: center;
   padding: 5px;
+  width: 180px;
+  color: white;
   
   
 }
@@ -596,7 +683,7 @@ align-content: flex-start;
   flex-wrap: wrap;
   text-align: center;
   position: relative;
-  left: 75px;
+  left: 32px;
   
 }
 
@@ -719,6 +806,7 @@ align-content: flex-start;
   max-width: 1000px;
   margin: 0 auto;
   color: white;
+  margin-top: 10px;
 }
 
 .exemplo-radio {
@@ -727,6 +815,7 @@ align-content: flex-start;
   flex-wrap: wrap;
   margin-top: 100px;
   justify-content: center;
+  font-size: 20px;
 }
 
 .fase2-first h3 {
@@ -734,8 +823,10 @@ align-content: flex-start;
   text-align: center;
   color: white;
   margin-bottom: 20px;
-  font-size: 22px;
+  font-family: GilroyRegular;
+  font-size: 25px;
   margin-top: 10px;
+  padding: 10px;
 
 
 }
@@ -743,6 +834,9 @@ align-content: flex-start;
 .fase2-first p {
 
   text-align: center;
+  font-size: 20px;
+  font-family: GilroyRegular;
+
 }
 
 .valor {
@@ -766,6 +860,8 @@ align-content: flex-start;
 
   width: 100%;
   text-decoration: underline;
+  font-size: 20px;
+
 
 
 }
@@ -785,8 +881,17 @@ align-content: flex-start;
 .termos2 {
 
   color: white;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
+  font-size: 20px;
+
+}
+
+.termos2 button {
+
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
 }
 
 

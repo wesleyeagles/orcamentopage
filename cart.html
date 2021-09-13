@@ -1,0 +1,388 @@
+<script src="https://cdn01.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.27536" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.27536" type="text/javascript"></script>
+<script defer src="https://cdn01.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.27536" type="text/javascript"></script>
+<script defer src="https://cdn02.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.27536" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.newPaymentUIForNewCreatedForms = true;
+	JotForm.newPaymentUI = true;
+	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+
+	JotForm.init(function(){
+	/*INIT-START*/
+      productID = {"0":"input_8_1000","1":"input_8_1001"};
+      paymentType = "product";
+      JotForm.setCurrencyFormat('BRL',true, 'comma');
+      JotForm.totalCounter({"input_8_1000":{"price":"159.90","quantityField":"input_8_quantity_1000_0"},"input_8_1001":{"price":"140.58","quantityField":"input_8_quantity_1001_0"}});
+      $$('.form-product-custom_quantity').each(function(el, i){el.observe('blur', function(){isNaN(this.value) || this.value < 1 ? this.value = '0' : this.value = parseInt(this.value)})});
+      $$('.form-product-custom_quantity').each(function(el, i){el.observe('focus', function(){this.value == 0 ? this.value = '' : this.value})});
+      JotForm.handleProductLightbox();
+if (window.JotForm && JotForm.accessible) $('input_13').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_12').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_12', '##.###.###/####-##' );
+      JotForm.setPhoneMaskingValidator( 'input_7_full', '(##) #####-####' );
+      JotForm.alterTexts({"ageVerificationError":"You must be older than {minAge} years old to submit this form.","alphabetic":"This field can only contain letters","alphanumeric":"This field can only contain letters and numbers.","appointmentSelected":"You’ve selected {time} on {date}","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccInvalidNumber":"Credit Card Number is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingDonation":"Please enter numeric values for donation amount.","ccMissingProduct":"Please select at least one product.","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","confirmClearForm":"Are you sure you want to clear the form","confirmEmail":"E-mail does not match","currency":"This field can only contain currency values.","cyrillic":"This field can only contain cyrillic characters","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","dateLimited":"This date is unavailable.","disallowDecimals":"Please enter a whole number.","doneButton":"Done","doneMessage":"Well done! All errors are fixed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","email":"Enter a valid e-mail address","fillMask":"Field value must fill mask.","freeEmailError":"Free email accounts are not allowed","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoNotAvailableTitle":"Position Unavailable","geoPermissionDesc":"Check your browser's privacy settings.","geoPermissionTitle":"Permission Denied","geoTimeoutDesc":"Please check your internet connection and try again.","geoTimeoutTitle":"Timeout","gradingScoreError":"Score total should only be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","justSoldOut":"Just Sold Out","lessThan":"Your score should be less than or equal to","maxDigitsError":"The maximum digits allowed is","maxFileSize_infoMessage":"Max. file size","maxSelectionsError":"The maximum number of selections allowed is ","minSelectionsError":"The minimum required number of selections is ","multipleError":"There are {count} errors in this page. Please correct them before moving on.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","noSlotsAvailable":"No slots available","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","numeric":"This field can only contain numeric values","oneError":"There is {count} error in this page. Please correct it before moving on.","pastDatesDisallowed":"Date must not be in the past.","pleaseWait":"Please wait...","required":"This field is required.","requiredLegend":"All fields marked with * are required and must be filled.","requireEveryCell":"Every cell is required.","requireEveryRow":"Every row is required.","requireOne":"At least one field required.","restrictedDomain":"This domain is not allowed","seeErrorsButton":"See Errors","selectionSoldOut":"Selection Sold Out","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","soldOut":"Sold Out","subProductItemsLeft":"({count} items left)","uploadExtensions":"You can only upload following files:","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","url":"This field can only contain a valid URL","validateEmail":"You need to validate this e-mail","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is"});
+      JotForm.alterTexts({"couponApply":"Aplicar","couponBlank":"Favor inserir um cupom.","couponChange":"","couponEnter":"Inserir cupom","couponExpired":"Cupom expirado. Por favor, tente outro cupom.","couponInvalid":"Coupon is invalid.","couponValid":"Cupom válido.","shippingShipping":"Envio","taxTax":"Imposto","totalSubtotal":"Subtotal","totalTotal":"Total"}, true);
+      FormTranslation.init({"detectUserLanguage":"1","firstPageOnly":"0","options":"Portuguese (Brazil)","originalLanguage":"pt-BR","primaryLanguage":"pt-BR","saveUserLanguage":"1","showStatus":"flag-with-nation","theme":"light-theme","version":"2"});
+	/*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"heading","qid":"1","text":"Formulario","type":"control_head"},{"name":"submit2","qid":"2","text":"Enviar","type":"control_button"},null,null,null,{"description":"","name":"email","qid":"6","subLabel":"exemplo@exemplo.com","text":"E-mail","type":"control_email"},{"description":"","name":"telefone","qid":"7","text":"Telefone","type":"control_phone"},{"description":"","name":"meusProdutos","qid":"8","text":"Meus Produtos","type":"control_payment"},null,null,{"description":"","name":"formaDe","qid":"11","text":"Forma de Pagamento","type":"control_radio"},{"description":"","name":"cnpj","qid":"12","subLabel":"","text":"CNPJ","type":"control_textbox"},{"description":"","name":"nome","qid":"13","subLabel":"","text":"Nome","type":"control_textbox"},{"description":"","name":"jaE","qid":"14","text":"Ja e cliente ?","type":"control_radio"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Formulario","type":"control_head"},{"name":"submit2","qid":"2","text":"Enviar","type":"control_button"},null,null,null,{"description":"","name":"email","qid":"6","subLabel":"exemplo@exemplo.com","text":"E-mail","type":"control_email"},{"description":"","name":"telefone","qid":"7","text":"Telefone","type":"control_phone"},{"description":"","name":"meusProdutos","qid":"8","text":"Meus Produtos","type":"control_payment"},null,null,{"description":"","name":"formaDe","qid":"11","text":"Forma de Pagamento","type":"control_radio"},{"description":"","name":"cnpj","qid":"12","subLabel":"","text":"CNPJ","type":"control_textbox"},{"description":"","name":"nome","qid":"13","subLabel":"","text":"Nome","type":"control_textbox"},{"description":"","name":"jaE","qid":"14","text":"Ja e cliente ?","type":"control_radio"}]);}, 20); 
+</script>
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f7ed99c2c2c7240ba580251"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.27536" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.27536" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+.form-label.form-label-auto {
+        
+      display: block;
+      float: none;
+      text-align: left;
+      width: 100%;
+    
+      }
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/212503775582054/" method="post" name="form_212503775582054" id="212503775582054" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="212503775582054" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <link type="text/css" rel="stylesheet" media="all" href="https://cdn.jotfor.ms/wizards/languageWizard/custom-dropdown/css/lang-dd.css?3.3.27536" />
+    <div class="cont">
+      <input type="text" id="input_language" name="input_language" style="display:none" />
+      <div class="language-dd" id="langDd" style="display:none">
+        <div class="dd-placeholder lang-emp">
+          Language
+        </div>
+        <ul class="lang-list dn" id="langList">
+          <li data-lang="pt-BR" class="pt-BR">
+            Portuguese (Brazil)
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.27536"></script>
+    <style>
+      .form-all:before { background: none;}
+    </style>
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">
+              Formulário
+            </h1>
+          </div>
+        </div>
+      </li>
+      <li class="form-line card-3col" data-type="control_payment" id="id_8" data-payment="true">
+        <label class="form-label form-label-top" id="label_8" for="input_8"> Meus Produtos </label>
+        <div id="cid_8" class="form-input-wide" data-layout="full">
+          <div data-wrapper-react="true" class="product-container-wrapper">
+            <div class="filter-container">
+            </div>
+            <input type="hidden" name="simple_fpc" data-payment_type="payment" data-component="payment1" value="8" />
+            <input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" />
+            <div id="image-overlay" class="overlay-content" style="display:none">
+              <img id="current-image" />
+              <span class="lb-prev-button">
+                prev
+              </span>
+              <span class="lb-next-button">
+                next
+              </span>
+              <span class="lb-close-button">
+                ( X )
+              </span>
+              <span class="image-overlay-product-container">
+                <ul class="form-overlay-item" hasicon="false" hasimages="true" iconvalue="">
+                  <li class="image-overlay-image">
+                    <img src="https://cdn.jotfor.ms/assets/img/payments/sample_image-3.png" />
+                  </li>
+                  <li class="image-overlay-image">
+                    <img src="https://cdn.jotfor.ms/assets/img/payments/sample_image-2.png" />
+                  </li>
+                </ul>
+                <ul class="form-overlay-item" hasicon="false" hasimages="true" iconvalue="">
+                  <li class="image-overlay-image">
+                    <img src="https://jotform.com/images/security_certificate_seal_comodo.png" />
+                  </li>
+                </ul>
+              </span>
+            </div>
+            <div data-wrapper-react="true">
+              <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option new_ui" categories="non-categorized" pid="1000" aria-labelledby="label_8">
+                <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                  <div class="p_col">
+                    <div class="p_checkbox">
+                      <input type="checkbox" class="form-checkbox  form-product-input" id="input_8_1000" name="q8_meusProdutos[][id]" value="1000" />
+                      <div class="checked">
+                      </div>
+                      <div class="select_border">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p_image">
+                    <div role="img" aria-label="Card" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://cdn.jotfor.ms/assets/img/payments/sample_image-3.png&quot;)">
+                      <div class="image_zoom">
+                      </div>
+                    </div>
+                  </div>
+                  <div for="input_8_1000" class="form-product-container">
+                    <span data-wrapper-react="true">
+                      <div class="title_description">
+                        <span class="form-product-name" id="product-name-input_8_1000">
+                          Card
+                        </span>
+                        <span class="form-product-description" id="product-name-description-input_8_1000">
+                          lorem lorem lorem lorem lorem lorem lorem
+                        </span>
+                      </div>
+                      <span class="form-product-details">
+                        <b>
+                          <span data-wrapper-react="true">
+                            R$
+                            <span id="input_8_1000_price">
+                              159.90
+                            </span>
+                          </span>
+                        </b>
+                      </span>
+                    </span>
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <label class="form-sub-label" for="input_8_quantity_1000_0" style="min-height:13px" aria-hidden="false"> Quantidade </label>
+                      <span class="select_cont">
+                        <select class="form-dropdown" name="q8_meusProdutos[special_1000][item_0]" id="input_8_quantity_1000_0">
+                          <option value="1"> 1 </option>
+                          <option value="2"> 2 </option>
+                          <option value="3"> 3 </option>
+                          <option value="4"> 4 </option>
+                          <option value="5"> 5 </option>
+                          <option value="6"> 6 </option>
+                          <option value="7"> 7 </option>
+                          <option value="8"> 8 </option>
+                          <option value="9"> 9 </option>
+                          <option value="10"> 10 </option>
+                        </select>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </span>
+              <div class="p_item_separator ">
+              </div>
+              <span class="form-product-item hover-product-item on_col2 show_image show_desc show_option full_img new_ui" categories="non-categorized" pid="1001" aria-labelledby="label_8">
+                <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                  <div class="p_col">
+                    <div class="p_checkbox">
+                      <input type="checkbox" class="form-checkbox  form-product-input" id="input_8_1001" name="q8_meusProdutos[][id]" value="1001" />
+                      <div class="checked">
+                      </div>
+                      <div class="select_border">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p_image">
+                    <div role="img" aria-label="Video" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://jotform.com/images/security_certificate_seal_comodo.png&quot;)">
+                      <div class="image_zoom">
+                      </div>
+                    </div>
+                  </div>
+                  <div for="input_8_1001" class="form-product-container">
+                    <span data-wrapper-react="true">
+                      <div class="title_description">
+                        <span class="form-product-name" id="product-name-input_8_1001">
+                          Video
+                        </span>
+                        <span class="form-product-description" id="product-name-description-input_8_1001">
+                          lorem lorem lorem
+                        </span>
+                      </div>
+                      <span class="form-product-details">
+                        <b>
+                          <span data-wrapper-react="true">
+                            R$
+                            <span id="input_8_1001_price">
+                              140.58
+                            </span>
+                          </span>
+                        </b>
+                      </span>
+                    </span>
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <label class="form-sub-label" for="input_8_quantity_1001_0" style="min-height:13px" aria-hidden="false"> Quantidade </label>
+                      <span class="select_cont">
+                        <select class="form-dropdown" name="q8_meusProdutos[special_1001][item_0]" id="input_8_quantity_1001_0">
+                          <option value="1"> 1 </option>
+                          <option value="2"> 2 </option>
+                          <option value="3"> 3 </option>
+                          <option value="4"> 4 </option>
+                          <option value="5"> 5 </option>
+                          <option value="6"> 6 </option>
+                          <option value="7"> 7 </option>
+                          <option value="8"> 8 </option>
+                          <option value="9"> 9 </option>
+                          <option value="10"> 10 </option>
+                        </select>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </span>
+              <div class="payment_footer new_ui ">
+                <div class="total_area">
+                  <div class="form-payment-total">
+                    <div id="total-text">
+                      Total
+                    </div>
+                    <div class="form-payment-price">
+                      <span data-wrapper-react="true">
+                        R$
+                        <span id="payment_total">
+                          0,00
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_14">
+        <label class="form-label form-label-top form-label-auto" id="label_14" for="input_14">
+          Já é cliente ?
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_14" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_14" data-component="radio">
+            <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" aria-describedby="label_14" class="form-radio validate[required]" id="input_14_0" name="q14_jaE" value="Sim" required="" />
+              <label id="label_input_14_0" for="input_14_0"> Sim </label>
+            </span>
+            <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" aria-describedby="label_14" class="form-radio validate[required]" id="input_14_1" name="q14_jaE" value="Não" required="" />
+              <label id="label_input_14_1" for="input_14_1"> Não </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_13">
+        <label class="form-label form-label-top form-label-auto" id="label_13" for="input_13">
+          Nome
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_13" class="form-input-wide jf-required" data-layout="half">
+          <input type="text" id="input_13" name="q13_nome" data-type="input-textbox" class="form-textbox validate[required]" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_13" required="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_12">
+        <label class="form-label form-label-top form-label-auto" id="label_12" for="input_12">
+          CNPJ
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_12" class="form-input-wide jf-required" data-layout="half">
+          <input type="text" id="input_12" name="q12_cnpj" data-type="input-textbox" class="form-textbox validate[required, Fill Mask]" style="width:310px" size="310" data-masked="true" value="" data-component="textbox" aria-labelledby="label_12" required="" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_6">
+        <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6"> E-mail </label>
+        <div id="cid_6" class="form-input-wide" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="email" id="input_6" name="q6_email" class="form-textbox validate[Email]" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_6 sublabel_input_6" />
+            <label class="form-sub-label" for="input_6" id="sublabel_input_6" style="min-height:13px" aria-hidden="false"> exemplo@exemplo.com </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_phone" id="id_7">
+        <label class="form-label form-label-top form-label-auto" id="label_7" for="input_7_full">
+          Telefone
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_7" class="form-input-wide jf-required" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="tel" id="input_7_full" name="q7_telefone[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]" style="width:310px" data-masked="true" value="" placeholder="(00) 00000-0000" data-component="phone" aria-labelledby="label_7 sublabel_7_masked" required="" />
+            <label class="form-sub-label" for="input_7_full" id="sublabel_7_masked" style="min-height:13px" aria-hidden="false"> Favor inserir um número de telefone válido. </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_11">
+        <label class="form-label form-label-top form-label-auto" id="label_11" for="input_11">
+          Forma de Pagamento
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_11" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_11" data-component="radio">
+            <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" aria-describedby="label_11" class="form-radio validate[required]" id="input_11_0" name="q11_formaDe" value="Pagamento à vista (Desconto)" data-calcvalue="10%" required="" />
+              <label id="label_input_11_0" for="input_11_0"> Pagamento à vista (Desconto) </label>
+            </span>
+            <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" aria-describedby="label_11" class="form-radio validate[required]" id="input_11_1" name="q11_formaDe" value="Pagamento Parcelado" required="" />
+              <label id="label_input_11_1" for="input_11_1"> Pagamento Parcelado </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+            <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+  JotForm.poweredByText = "Powered by JotForm";
+  </script>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="212503775582054" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='212503775582054'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "212503775582054-212503775582054";
+}
+  </script>
+  <div class="formFooter-heightMask">
+  </div>
+</form>
+<script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.27536"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.27536"></script>
